@@ -12337,3 +12337,14 @@ i{
 	margin-top: 1rem !important;
 	
 }
+
+/*footer text align centre*/
+.footer {
+    text-align: center; /* Center the text */
+    padding: 20px; /* Optional: Add padding for spacing */
+    background-color: #f8f9fa; /* Optional: Add a background color */
+}
+
+.mb-0 {
+    margin-bottom: 0; /* Ensure there's no bottom margin */
+}
