@@ -12342,19 +12342,26 @@ i{
 
 /*footer text align centre*/
 .footer {
+
     background-color: #f8f9fa; /* Set your desired background color */
     text-align: center; /* Center the text */
     padding: 20px 0; /* Optional padding for top and bottom */
     width: 100%; /* Ensure the footer stretches to the full width */
     position: relative; /* Make sure it's relative to the page */
+
+    text-align: center; /* Center the text */
+    padding: 20px; /* Optional: Add padding for spacing */
+    background-color: #f8f9fa; /* Optional: Add a background color */
 }
 
 .mb-0 {
     margin-bottom: 0; /* Ensure there's no bottom margin */
 }
 
+
 .footer2 {
     max-width: 2000px; /* Adjust based on your design */
     margin: 0 auto; /* Center content within the container */
     padding: 0 15px; /* Add some padding to the content */
 }
+
