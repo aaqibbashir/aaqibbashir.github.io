@@ -12272,3 +12272,45 @@ i{
 
 
 
+/*Icons for contact me section*/
+.icon-container {
+  display: flex;
+  justify-content: space-evenly; /* Evenly space items, starting from the center */
+  align-items: center; /* Vertically center items if necessary */
+  width: 100%; /* Take up full width of the container */
+}
+
+.my-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #695aa6;
+  color: white;
+  border-radius: 50%;
+  font-size: 24px;  /* Adjust the icon size */
+  width: 60px;      /* Set the size of the circle */
+  height: 60px;
+}
+
+.my-icons:hover {
+  background-color: #4d3b85; /* Optional: Darker color on hover */
+}
+
+.align-self-stretch {
+  text-align: center;
+  flex-grow: 1; /* Ensures even spacing between items */
+}
+
+
+
+
+.contact-details p{
+  font-family: "Open Sans", sans-serif;
+  font-size: 1rem;
+  opacity: .6;
+}
+
+.mb-9{
+	margin-top: 1rem !important;
+	
+}
