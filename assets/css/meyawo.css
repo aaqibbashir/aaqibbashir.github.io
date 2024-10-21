@@ -12276,10 +12276,10 @@ i{
 .icon-container {
   display: flex;
   justify-content: space-evenly; /* Evenly space items in a row */
-  align-items: center; /* Vertically center items */
+  align-items: center; /* Center items vertically */
   width: 100%; /* Take up full width */
-  flex-wrap: wrap; /* Allow wrapping to the next line if necessary */
-  gap: 20px; /* Add space between items */
+  flex-wrap: wrap; /* Allow items to wrap to the next line if necessary */
+  gap: 20px; /* Space between items */
 }
 
 .my-icons {
@@ -12300,21 +12300,29 @@ i{
 
 .align-self-stretch {
   text-align: center;
-  flex-grow: 1; /* Ensure even spacing */
+  flex-basis: 200px; /* Set a minimum width for each item */
 }
 
 /* Media query for smaller screens */
 @media (max-width: 768px) {
   .icon-container {
     flex-direction: column; /* Stack items vertically */
-    align-items: center; /* Center them in the middle */
+    align-items: center; /* Center them horizontally */
   }
 
   .align-self-stretch {
-    flex-grow: 0; /* Disable growing for vertical alignment */
-    width: 100%; /* Take up full width for better spacing */
+    flex-basis: auto; /* Let items adjust to content width */
+    width: 100%; /* Take up full width */
+    margin-bottom: 20px; /* Add spacing between stacked items */
+  }
+
+  .my-icons {
+    width: 50px; /* Reduce icon size for mobile screens */
+    height: 50px;
+    font-size: 20px; /* Reduce font size of icons */
   }
 }
+
 
 
 
