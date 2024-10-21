@@ -11648,7 +11648,7 @@ pre .code {
 }
 
 .custom-navbar .logo {
-  font-size: calc(20px + (30 - 20) * ((100vw - 300px) / (1300 - 300)));
+  font-size: calc(16px + (30 - 20) * ((100vw - 300px) / (1300 - 300)));
   text-decoration: none;
   color: #fff;
 }
@@ -11994,6 +11994,7 @@ pre .code {
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
+ 
 }
 
 .footer p,
@@ -12098,7 +12099,7 @@ pre .code {
 }
 
 .header .header-content .header-title .up {
-  font-size: 45px/*calc(30px + (60 - 30) * ((100vw - 300px) / (1300 - 300)))*/;
+  font-size: 40px/*calc(30px + (60 - 30) * ((100vw - 300px) / (1300 - 300)))*/;
   font-weight: 500;
   color: #444;
   margin-bottom: 5px;
@@ -12275,9 +12276,11 @@ i{
 /*Icons for contact me section*/
 .icon-container {
   display: flex;
-  justify-content: space-evenly; /* Evenly space items, starting from the center */
-  align-items: center; /* Vertically center items if necessary */
-  width: 100%; /* Take up full width of the container */
+  justify-content: space-evenly; /* Evenly space items in a row */
+  align-items: center; /* Center items vertically */
+  width: 100%; /* Take up full width */
+  flex-wrap: wrap; /* Allow items to wrap to the next line if necessary */
+  gap: 20px; /* Space between items */
 }
 
 .my-icons {
@@ -12298,19 +12301,60 @@ i{
 
 .align-self-stretch {
   text-align: center;
-  flex-grow: 1; /* Ensures even spacing between items */
+  flex-basis: 200px; /* Set a minimum width for each item */
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+  .icon-container {
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center them horizontally */
+  }
+
+  .align-self-stretch {
+    flex-basis: auto; /* Let items adjust to content width */
+    width: 100%; /* Take up full width */
+    margin-bottom: 20px; /* Add spacing between stacked items */
+  }
+
+  .my-icons {
+    width: 50px; /* Reduce icon size for mobile screens */
+    height: 50px;
+    font-size: 20px; /* Reduce font size of icons */
+  }
 }
 
 
 
 
+/*Another Section*/
 .contact-details p{
   font-family: "Open Sans", sans-serif;
-  font-size: 1rem;
+  font-size: 0.9rem;
+  font-weight:400;
   opacity: .6;
 }
 
 .mb-9{
 	margin-top: 1rem !important;
 	
+}
+
+/*footer text align centre*/
+.footer {
+    background-color: #f8f9fa; /* Set your desired background color */
+    text-align: center; /* Center the text */
+    padding: 20px 0; /* Optional padding for top and bottom */
+    width: 100%; /* Ensure the footer stretches to the full width */
+    position: relative; /* Make sure it's relative to the page */
+}
+
+.mb-0 {
+    margin-bottom: 0; /* Ensure there's no bottom margin */
+}
+
+.footer2 {
+    max-width: 2000px; /* Adjust based on your design */
+    margin: 0 auto; /* Center content within the container */
+    padding: 0 15px; /* Add some padding to the content */
 }
