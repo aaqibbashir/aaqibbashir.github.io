@@ -566,6 +566,17 @@
             </div> -->
 			
 			
+			<div class="visitor-counter">
+				<div class="counter-label">
+					<i class="fa fa-users"></i> Profile Views
+				</div>
+				<div class="counter-number">
+					<span id="visitorCount">65</span>
+				</div>
+			</div>
+			
+			
+			
         </footer>
     </div> <!-- end of page footer -->
 
@@ -580,6 +591,20 @@
     <script src="assets/js/meyawo.js"></script>
 	
 	<script src="assets/js/certifications.js"></script>
+
+
+	<!-- Visitor Count -->
+	<script>
+    // Simple localStorage-based visitor count (same as before)
+    if (localStorage.getItem('visitorCount')) {
+        let count = parseInt(localStorage.getItem('visitorCount')) + 1;
+        localStorage.setItem('visitorCount', count);
+        document.getElementById('visitorCount').innerText = count;
+    } else {
+        localStorage.setItem('visitorCount', 65); // Initial value (or 1)
+        document.getElementById('visitorCount').innerText = 65;
+    }
+</script>
 
 
 </body>
