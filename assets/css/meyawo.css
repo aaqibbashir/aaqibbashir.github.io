@@ -11648,7 +11648,7 @@ pre .code {
 }
 
 .custom-navbar .logo {
-  font-size: calc(16px + (30 - 20) * ((100vw - 300px) / (1300 - 300)));
+  font-size: 25px /*calc(16px + (30 - 20) * ((100vw - 300px) / (1300 - 300)))*/;
   text-decoration: none;
   color: #fff;
 }
@@ -12099,7 +12099,7 @@ pre .code {
 }
 
 .header .header-content .header-title .up {
-  font-size: 40px/*calc(30px + (60 - 30) * ((100vw - 300px) / (1300 - 300)))*/;
+  font-size: 30px/*calc(30px + (60 - 30) * ((100vw - 300px) / (1300 - 300)))*/;
   font-weight: 500;
   color: #444;
   margin-bottom: 5px;
@@ -12108,7 +12108,7 @@ pre .code {
 }
 
 .header .header-content .header-title .down {
-  font-size: calc(30px + (75 - 30) * ((100vw - 300px) / (1300 - 300)));
+  font-size: 70px/*calc(30px + (75 - 30) * ((100vw - 300px) / (1300 - 300)))*/;
   margin-bottom: 0;
   position: relative;
   display: block;
@@ -12267,8 +12267,8 @@ i{
 
 .header-image {
     flex: 0 0 50px;
-    margin-right: 10px;
-    margin-left: 10px;
+    margin-right: 13px;
+    margin-left: 13px;
 }	
 
 
@@ -12381,6 +12381,7 @@ i{
     width: fit-content;
 	margin-top:5px;
 	margin-right:15px;
+	font-family: 'Open Sans', sans-serif; /* Apply Open Sans */
 }
 
 .counter-label {
@@ -12392,6 +12393,7 @@ i{
     font-size: 10px; /* Smaller font size */
     border-top-left-radius: 6px;
     border-bottom-left-radius: 6px;
+	font-family: 'Open Sans', sans-serif; /* Apply Open Sans */
 }
 
 .counter-number {
@@ -12402,9 +12404,23 @@ i{
     font-size: 10px; /* Smaller font size */
     border-top-right-radius: 6px;
     border-bottom-right-radius: 6px;
+	font-family: 'Open Sans', sans-serif; /* Apply Open Sans */
 }
 
 .visitor-counter i {
     margin-right: 6px; /* Slightly smaller margin */
     font-size: 9px; /* Smaller icon size */
+}
+
+.project-description{
+  font-family: "Open Sans", sans-serif;
+  font-size: 0.75rem;
+  font-weight: 500;
+  line-height: 1.5;
+  text-align: center;
+}
+
+.header-title{
+	
+	font-weight: 550;
 }
