@@ -1135,7 +1135,7 @@ a:hover.back-to-top {
 	}
 	
 	/*Added by me*/
-	.linkedin, .github {
+	.linkedin, .github, .fiverr {
 		padding-right:9px;
 		font-size:1.1rem;
 
@@ -1486,13 +1486,13 @@ ol.list-unstyled li .number-circle:before {
 
 
 /*Using the fi text as fiverr icon*/
-.fiverr {
+/*.fiverr {
     font-family: 'Nunito', sans-serif;     /* other fonts in place of Nunito are Montserrat/Poppins/Raleway/Manrope */
-    font-size: 18px; /* Match the icon size with other buttons */
-    font-weight: bold;
+   /* font-size: 18px; /* Match the icon size with other buttons */
+   /* font-weight: bold;
     margin-right: 8px; /* Space between 'fi' and 'Hire Me' */
-    line-height: 1; /* Keep height aligned with text */
-}
+   /* line-height: 1; /* Keep height aligned with text */
+/*} */
 
 
 
